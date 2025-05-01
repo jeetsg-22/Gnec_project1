@@ -2,7 +2,6 @@ version: '3.8'
 services:
   app:
     build: .
-    container_name: braille-backend
     ports:
       - "8080:8080"
     depends_on:
@@ -14,7 +13,6 @@ services:
 
   mimic:
     image: mycroftai/mimic3
-    container_name: mimic3
     ports:
       - "59125:59125"
     networks:
